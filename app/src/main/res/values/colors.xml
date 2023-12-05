@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    //app ui colors
+    <color name="c10">#E94C61</color>
+    <color name="c30">#F0586C</color>
+    <color name="c60">#FAEFF0</color>
+
+
+    <color name="ltGrayColor">#D2D3D5</color>
+    <color name="grayColor">#616263</color>
+</resources>

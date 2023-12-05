@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "454107312209",
+    "project_id": "shopsy-4de21",
+    "storage_bucket": "shopsy-4de21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454107312209:android:b075db9900c8a5eab3c870",
+        "android_client_info": {
+          "package_name": "com.manu.shopsyadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454107312209-okt0d4qcv73sjc4r219rh0lp7b4jqomr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ2d8WXlCPdgcwpygj82wL5S8Y8qSNB30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454107312209-okt0d4qcv73sjc4r219rh0lp7b4jqomr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454107312209:android:317611ea5b3cfbccb3c870",
+        "android_client_info": {
+          "package_name": "com.manu.shopsyuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454107312209-okt0d4qcv73sjc4r219rh0lp7b4jqomr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ2d8WXlCPdgcwpygj82wL5S8Y8qSNB30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454107312209-okt0d4qcv73sjc4r219rh0lp7b4jqomr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

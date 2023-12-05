@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp"
+    android:background="#FAF7F7">
+
+    <TextView
+        android:id="@+id/prodTitle"
+        style="@style/tvBlackSubHeading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:lineSpacingExtra="-2sp"
+        android:maxLines="2"
+        android:text="TextView TextView TextView TextView TextView TextView TextView TextView"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="@+id/cardView2" />
+
+    <TextView
+        android:id="@+id/prodMrp"
+        style="@style/tvBlackSubHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins"
+        android:text="₹1499"
+        android:background="@drawable/strike_through"
+        android:textColor="@color/grayColor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/prodTitle"
+        app:layout_constraintTop_toBottomOf="@+id/prodTitle" />
+
+    <TextView
+        android:id="@+id/prodSp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="₹399"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/prodMrp"
+        app:layout_constraintStart_toEndOf="@+id/prodMrp"
+        app:layout_constraintTop_toTopOf="@+id/prodMrp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="140dp"
+        android:layout_height="180dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/prodImg"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/placeholder" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvSize"
+        style="@style/tvBlackSubHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="Size: S"
+        app:layout_constraintStart_toStartOf="@+id/prodMrp"
+        app:layout_constraintTop_toBottomOf="@+id/prodSp" />
+
+    <TextView
+        android:id="@+id/tvColor"
+        style="@style/tvBlackSubHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="Color: Black"
+        app:layout_constraintStart_toStartOf="@+id/tvSize"
+        app:layout_constraintTop_toBottomOf="@+id/tvSize" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

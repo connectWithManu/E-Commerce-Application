@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="80dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/getImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/placeholder" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/tvWhiteHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+
+                android:fontFamily="@font/poppins_semibold"
+                android:text="User name"
+                android:textColor="@color/grayColor"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+                app:layout_constraintStart_toEndOf="@+id/cardView2"
+                app:layout_constraintTop_toTopOf="@+id/cardView2"
+                app:layout_constraintVertical_bias="0.31" />
+
+
+            <TextView
+                android:id="@+id/number"
+                style="@style/tvWhiteSubHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.70"
+                android:fontFamily="@font/poppins"
+                android:text="user@gmail.com"
+                android:textColor="@color/grayColor"
+                app:layout_constraintStart_toStartOf="@+id/name"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="4dp"
+            android:clickable="true"
+            android:paddingHorizontal="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/headerLayout">
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="@string/app_name"
+                android:padding="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon" />
+
+            <TextView
+                android:id="@+id/textView32"
+                style="@style/tvBlackSubHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="0dp"
+                android:layout_marginStart="16dp"
+                android:text="Profile"
+                android:textColor="@color/grayColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView19"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/btMenu"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginHorizontal="8dp"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView32"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_draw_arrow"
+                app:tint="@color/grayColor" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/navAppointment"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:paddingHorizontal="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/navProfile"
+            app:layout_constraintStart_toStartOf="@+id/navProfile"
+            app:layout_constraintTop_toBottomOf="@+id/navProfile">
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:contentDescription="@string/app_name"
+                android:padding="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon" />
+
+            <TextView
+                android:id="@+id/textView33"
+                style="@style/tvWhiteSubHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="0dp"
+                android:layout_marginStart="16dp"
+                android:text="Hellos"
+                android:textColor="@color/grayColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView20"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginHorizontal="8dp"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView33"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_draw_arrow"
+                app:tint="@color/grayColor" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/navDoctor"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:paddingHorizontal="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/navAppointment"
+            app:layout_constraintStart_toStartOf="@+id/navAppointment"
+            app:layout_constraintTop_toBottomOf="@+id/navAppointment">
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon" />
+
+            <TextView
+                android:id="@+id/textView34"
+                style="@style/tvBlackSubHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="0dp"
+                android:layout_marginStart="16dp"
+                android:text="Find Doctor"
+                android:textColor="@color/grayColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView21"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginHorizontal="8dp"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView34"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_draw_arrow"
+                app:tint="@color/grayColor" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/navCart"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:paddingHorizontal="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/navDoctor"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/navDoctor"
+            app:layout_constraintTop_toBottomOf="@+id/navDoctor">
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon" />
+
+            <TextView
+                android:id="@+id/textView35"
+                style="@style/tvBlackSubHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="0dp"
+                android:layout_marginStart="16dp"
+                android:text="Your Cart"
+                android:textColor="@color/grayColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView22"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginHorizontal="8dp"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView35"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_draw_arrow"
+                app:tint="@color/grayColor" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/navRate"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:paddingHorizontal="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/navCart"
+            app:layout_constraintStart_toStartOf="@+id/navCart"
+            app:layout_constraintTop_toBottomOf="@+id/navCart">
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon" />
+
+            <TextView
+                android:id="@+id/textView36"
+                style="@style/tvBlackSubHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="0dp"
+                android:layout_marginStart="16dp"
+                android:text="Rate Us"
+                android:textColor="@color/grayColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView23"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginHorizontal="8dp"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView36"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_draw_arrow"
+                app:tint="@color/grayColor" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/navPolicy"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:paddingHorizontal="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/navRate"
+            app:layout_constraintStart_toStartOf="@+id/navRate"
+            app:layout_constraintTop_toBottomOf="@+id/navRate">
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="@string/app_name"
+                android:padding="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon" />
+
+            <TextView
+                android:id="@+id/textView37"
+                style="@style/tvBlackSubHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="0dp"
+                android:layout_marginStart="16dp"
+                android:text="Privacy Policy"
+                android:textColor="@color/grayColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView24"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView32"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginHorizontal="8dp"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView37"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_draw_arrow"
+                app:tint="@color/grayColor" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/navContactUs"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:paddingHorizontal="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/navPolicy"
+            app:layout_constraintStart_toStartOf="@+id/navPolicy"
+            app:layout_constraintTop_toBottomOf="@+id/navPolicy">
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="@string/app_name"
+                android:padding="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon" />
+
+            <TextView
+                android:id="@+id/textView38"
+                style="@style/tvBlackSubHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="0dp"
+                android:layout_marginStart="16dp"
+                android:text="Contact Us"
+                android:textColor="@color/grayColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView25"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView33"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginHorizontal="8dp"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView38"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_draw_arrow"
+                app:tint="@color/grayColor" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/navLogout"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:paddingHorizontal="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="@string/app_name"
+                android:padding="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon" />
+
+            <TextView
+                android:id="@+id/textView42"
+                style="@style/tvBlackSubHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Logout"
+                android:textColor="@color/grayColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView27"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView34"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginHorizontal="8dp"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="@+id/textView42"
+                app:layout_constraintStart_toEndOf="@+id/textView42"
+                app:layout_constraintTop_toTopOf="@+id/textView42"
+                app:srcCompat="@drawable/icon_draw_arrow"
+                app:tint="@color/grayColor" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            app:layout_constraintEnd_toEndOf="@+id/navContactUs"
+            app:layout_constraintStart_toStartOf="@+id/navContactUs"
+            app:layout_constraintTop_toBottomOf="@+id/navContactUs">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
